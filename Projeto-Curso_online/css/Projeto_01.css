@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mont;
+}
+
+@font-face {
+    font-family: mont;
+    src: url(../fonts/Montserrat/Montserrat-Thin.ttf);
+}
+
+html, body{
+    height: 100%;
+}
+.clear{
+    clear: both;
+}
+
+.center{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+   
+.header{
+    width: 100%;
+    height: 80px;
+    padding: 0 2%;
+    background-color: #212343;
+}
+
+.header img{
+    margin: 15px;
+    width: 50px;
+}
+
+.banner{
+    width: 100%;
+    height: 600px;
+    padding: 0 2%;
+    background-image: url("../imagens/r13.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner > .center{
+    height: 100%;
+}
+
+.form{
+    /*display: inline block;*/
+    float: right;
+    height: 650px;
+    width: 400px;
+    background-color:dimgrey;
+    position: relative;
+    top: -25px;
+    border: 8px solid;
+    border-width: 12px;
+    border-color: rgba(120, 120, 120, 0.5);
+    padding: 10px;
+    padding-top: 50px;
+    background-clip: padding-box;
+}
+
+.form h2{
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #ccc;
+}
+
+form input[type=text]{
+    width: 350px;
+    height: 50px;
+    border: 2px solid dimgrey;
+    border-radius: 5px;
+}
+
+form input[type=text]:focus{
+    outline: none;
+}
+
+.form p{
+    color:#ccc;
+    font-size: 0 17px;
+}
+
+.campo{
+    margin-bottom: 30px;
+}
+
+.form input[type=submit]{
+    width: 250px;
+    height: 56px;
+    background-color: #363a6d;
+    cursor: pointer;
+    color: #ccc;
+    margin-top: 30px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+}
+
+.form .botao{
+    text-align: center;
+}
+
+.info{
+    float: left;  
+    width: 520px;
+    height: 270px;
+    opacity: 0.7;
+    background-color:#212343;
+    padding: 30px;
+    margin-top: 100px;  
+    font-size: 17px; 
+}
+
+.info ul li{
+    margin: 20px 0;
+    color: white;
+}
+
+.text{
+    padding: 55px 2%;
+    text-align: center;
+    background-color: #dddddd;
+    width: 100%;
+}
+
+.text p{
+    margin: 30px 0;
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: justify;
+    max-width: 670px;
+}
+
+.seta{
+    height: 70px;
+    width: 70px;
+    background-image:  url("..Projeto_01/imagens/seta3.png")
+}
+
+
+
+.section-1{  /*section1*/
+    padding: 90px 0;
+}
+
+.section-1 h2{
+    text-align: center;
+}
+
+.section{   /*container-section*/
+    margin-top: 40px;
+}
+
+.section{
+    text-align: center;
+}
+
+.single{  /*single*/
+    float: left;
+    width: 33.333%;
+    padding: 40px;
+}
+
+.single img{
+    height: 90px; 
+    width: 90px;
+}
+
+.text1 p{
+   font-weight: bold;
+   margin-top: 10px;
+   text-align: justify;
+}
+
+.footer{
+    border: 2px solid #dddddd;
+    padding: 35px;
+}
+
+.footer p{
+    text-align: center;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1024px){
+    .header{
+        height: auto;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    header img{
+        margin: 0;
+    }
+
+    .banner{
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center; 
+    }
+
+    
+    .info{
+        padding: 30px 0;
+        width: 90%;
+        float: none;
+        margin-top: 0;
+        display: inline-block;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .info ul li{
+        padding: 0 20px;
+        color: white;
+        list-style-position:inside;
+    }
+
+
+    .form{
+        margin-top: 30px;
+        max-width: 400px;
+        padding: 10px;
+        width: 90%;
+        height: 100%;
+        display: inline-block;
+        float: none;
+        top: 0;
+    }
+
+    .form input[type=text]{
+        width: 100%;
+        height: 55px;
+    }
+
+    .form input[type=submit]{
+        max-width: 280px;
+        height: 56px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .text p{
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+    .info{
+        margin-top: 0;
+        float: none;
+        width: 100%;
+        display: inline-block;
+    }
+
+
+    .form{
+        margin-top: 30px;
+        width: 90%;
+        display: inline-block;
+        float: none;
+    }
+
+    .single{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+        padding: 30px 0;
+    }
+}
